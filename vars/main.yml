@@ -10,3 +10,8 @@ mysql_users:
     host: "%"
     password: "{{wordpress_password}}"
     priv: "{{wordpress_user}}.*:ALL"
+
+roles:
+    - role: wordpress 
+    - role: geerlingguy.mysql
+    
